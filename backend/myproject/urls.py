@@ -19,8 +19,8 @@ from AgriApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # re_path('api/crop-recommendation', views.crop_recommendation),
-    # re_path('api/fertilizer-recommendation', views.fertilizer_recommendation),
-    # re_path('api/stroke-prediction', views.stroke_prediction),
+    re_path('api/crop-recommendation', views.crop_recommendation),
+    re_path('api/fertilizer-recommendation', views.fertilizer_recommendation),
+    re_path('api/stroke-prediction', views.stroke_prediction),
     # path('', include('AgriApp.urls')),
 ]
