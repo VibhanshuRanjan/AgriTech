@@ -14,9 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path,include,re_path
+from AgriApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('frontend.urls')),
+    # re_path('api/crop-recommendation', views.crop_recommendation),
+    # re_path('api/fertilizer-recommendation', views.fertilizer_recommendation),
+    # re_path('api/stroke-prediction', views.stroke_prediction),
+    # path('', include('AgriApp.urls')),
 ]
