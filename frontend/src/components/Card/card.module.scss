@@ -1,0 +1,31 @@
+
+.t1{
+    height:5em;
+    margin-bottom: 2em;
+    filter:hue-rotate(230deg) saturate(1.6);
+}
+
+.card{
+    width:23em;
+    height: 16em;
+    border: none;
+    border-radius: 0;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+
+}
+
+.title{
+    margin-bottom: 1em;
+}
+
+.link{
+    margin-top: 2em;
+    text-decoration: none;
+}
+.link:hover{
+    color:rgb(101, 195, 205);
+}
+

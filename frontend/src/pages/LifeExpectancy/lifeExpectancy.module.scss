@@ -1,0 +1,136 @@
+.box {
+	margin: 5em 20em 1em 20em;
+	// background-color: rgb(255, 242, 242);
+	display: flex;
+	flex-direction: row;
+	height: 30em;
+	font-family: 'Raleway', sans-serif;
+
+	// background-image: linear-gradient(120deg, green, blue, yellow);
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.17);
+}
+
+.fullpage {
+	background-color: rgb(252 236 255);
+	;
+	//background-image:linear-gradient(147deg, #ebe0ec, #e7c3e2, #e7db95);
+	height: 100vh;
+}
+
+// .or{
+//     // text-align: center;
+//     margin-right:30px;
+//     margin-top:20px;
+//     }
+.left {
+	flex: 1;
+	// background-color: #ed79ff;
+	background-image: linear-gradient(60deg, #c82ee0, #ffa2f9);
+}
+
+.heading {
+	font-size: x-large;
+	margin-top: 2em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	color: white;
+}
+
+.info {
+	margin: 2em 6em 0em 6em;
+	font-family: 'Raleway', sans-serif;
+	// font-weight: 100;
+	color: white;
+}
+
+.img {
+	margin-top: 2em;
+	height: 15em;
+	filter: saturate(0.4) hue-rotate(230deg) brightness(1.4);
+}
+
+.right {
+	flex: 1;
+	background-color: white;
+
+}
+
+.row {
+	padding-top: 1em;
+}
+
+.table {
+	margin: auto;
+	margin-top: 2em;
+}
+
+.forinput {
+	margin-top: 1em;
+	width: 15em;
+	height: 2em;
+	// position:relative;
+	// margin: 13px  0 0 620px;
+	// margin-left:100%;
+	// margin-right:10%;
+	padding-left: 10px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px #cbc9c9;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+	background: #fff;
+	// margin:auto;
+}
+
+.btn_block {
+	margin-top: 3em;
+}
+
+.btn_back {
+	margin-top: 4em;
+
+}
+
+.custom_button {
+	border-radius: 5px;
+	background-color: #e264ec;
+	color: white;
+	width: 7em;
+	border: none;
+	font-weight: 500;
+}
+
+.custom_button:hover {
+	color: #c82ee0;
+	background-color: white;
+	border: 1px solid #c82ee0;
+	font-weight: bold;
+
+}
+
+.result {
+
+	margin: auto;
+	// font-family: 'Ubuntu', sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	color: red;
+
+	height: 11em
+}
+
+.result_heading {
+	padding-top: 7em;
+	padding-bottom: 1em;
+	// font-family: 'Ubuntu', sans-serif;
+	font-size: large;
+	color: black;
+
+}
+
+
+// .marg{
+//   width:100%;
+//   // background-color: rgb(209, 203, 166);
+//   // border: 1px solid rgb(173, 173, 173);
+//   height: 35px;
+//   table-layout: fixed;
+// }
