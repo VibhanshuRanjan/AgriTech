@@ -21,6 +21,7 @@ cwd = os.path.dirname(os.path.realpath(__file__))
 model2 = pickle.load(open(cwd+"\FertilizerRecommendationModel.pkl", 'rb'))
 model1 = pickle.load(open(cwd+'\CropRecommendationModel.pkl', 'rb'))
 model4= pickle.load(open(cwd+'\StrokePredictionModel.pkl', 'rb'))
+model5=pickle.load(open(cwd+'\LifeExpectancyPredictionModel.pkl','rb'))
 
 
 
@@ -168,3 +169,19 @@ def stroke_prediction(request):
         # print(output)
         # print(cwd)
         return Response(output)
+
+
+
+@api_view(['GET', 'POST'])
+def life_expectancy_prediction(request):
+    if request.method == "POST":
+        # print(request.data)
+        int_features = [int ( x ) for x in request.data]
+        print(int_features)
+        final_features = [np.array(int_features)]
+        prediction = model4.predict( final_features )
+        # output = prediction[0].capitalize()
+        print(prediction)
+        # print(cwd)
+        return Response("output")
+

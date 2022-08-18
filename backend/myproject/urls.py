@@ -22,5 +22,6 @@ urlpatterns = [
     re_path('api/crop-recommendation', views.crop_recommendation),
     re_path('api/fertilizer-recommendation', views.fertilizer_recommendation),
     re_path('api/stroke-prediction', views.stroke_prediction),
+    re_path('api/life-expectancy-prediction',views.life_expectancy_prediction)
     # path('', include('AgriApp.urls')),
 ]
