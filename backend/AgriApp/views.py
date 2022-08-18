@@ -179,9 +179,9 @@ def life_expectancy_prediction(request):
         int_features = [int ( x ) for x in request.data]
         print(int_features)
         final_features = [np.array(int_features)]
-        prediction = model4.predict( final_features )
-        # output = prediction[0].capitalize()
-        print(prediction)
+        prediction = model5.predict( final_features )
+        output = round(prediction[0],2)
+        # print(prediction)
         # print(cwd)
-        return Response("output")
+        return Response(output)
 

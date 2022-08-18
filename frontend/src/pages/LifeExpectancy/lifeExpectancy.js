@@ -37,7 +37,7 @@ function CropRecommendation() {
           GDP,population,prevalence10,prevalence5,incomeComposition,schooling
         ]
         console.log(obj)
-        let s="http://localhost:8000/api/crop-recommendation"
+        let s="http://localhost:8000/api/life-expectancy-prediction"
         axios.post(s, obj)
           
           .then(res => {
@@ -92,10 +92,11 @@ function CropRecommendation() {
                   
                 <div className={style.result}>
                   <div className={style.result_heading}>
-                    Recommended Crop:
+                  Your life expectancy is :
                   </div>
-                  {prediction}
-                </div>
+                  {prediction} &nbsp; years
+                  </div>
+                  
                 <div className={style.btn_back}>
                 <button type="button" className={style.custom_button} onClick={()=>setFlag(false)}>Back</button>
                 </div>
