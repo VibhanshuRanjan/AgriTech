@@ -3,7 +3,7 @@
 	// background-color: rgb(255, 242, 242);
 	display: flex;
 	flex-direction: row;
-	height: 30em;
+	// height: 30em;
 	font-family: 'Raleway', sans-serif;
 
 	// background-image: linear-gradient(120deg, green, blue, yellow);
@@ -14,7 +14,7 @@
 	background-color: rgb(252 236 255);
 	;
 	//background-image:linear-gradient(147deg, #ebe0ec, #e7c3e2, #e7db95);
-	height: 100vh;
+	min-height: 150vh;
 }
 
 // .or{
@@ -25,6 +25,7 @@
 .left {
 	flex: 1;
 	// background-color: #ed79ff;
+	
 	background-image: linear-gradient(60deg, #c82ee0, #ffa2f9);
 }
 
@@ -60,6 +61,7 @@
 }
 
 .table {
+	// width: 35em;
 	margin: auto;
 	margin-top: 2em;
 }
@@ -80,8 +82,25 @@
 	// margin:auto;
 }
 
+.selected{
+	margin-top: 1em;
+	width: 15em;
+	height: 2em;
+	// position:relative;
+	// margin: 13px  0 0 620px;
+	// margin-left:100%;
+	// margin-right:10%;
+	padding-left: 10px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 1px #cbc9c9;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+	background: #fff;
+	color: gray;
+}
+
 .btn_block {
-	margin-top: 3em;
+	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 .btn_back {
@@ -125,6 +144,8 @@
 	color: black;
 
 }
+
+
 
 
 // .marg{

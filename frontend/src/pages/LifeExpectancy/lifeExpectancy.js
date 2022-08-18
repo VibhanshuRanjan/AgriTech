@@ -7,28 +7,34 @@ import { BASE_API_URL } from '../../utils/constansts';
 
 function CropRecommendation() {
 
-    const [nitrogenContent, setNitrogenContent] = useState();
-    const [phosphorusContent,setPhosphorusContent]= useState();
-    const [pottasium, setPottasium]= useState();
-    const [temperature, setTemperature] = useState();
-    const [humidity,setHumidity]= useState();
-    const [pH, setPh]= useState();
-    const [rainfall, setRainfall] = useState();
-    const [prediction, setPrediction] = useState("Papaya ");
-    const [flag,setFlag] = useState(false);
+    const [status, setStatus] = useState();
+    const [adultMortality,setAdultMortality]= useState();
+    const [alcohol, setAlcohol]= useState();
+    const [expenditure, setExpenditure] = useState();
+    const [hepatitisB,setHepatitisB]= useState();
+    const [measles, setMeasles]= useState();
+    const [BMI, setBMI] = useState();
+    const [under5Deaths, setUnder5Deaths] = useState();
+    const [polio,setPolio] = useState();
+    const [totalExpenditure,setTotalExpenditure]= useState();
+    const [diphtheria, setDiphtheria]= useState();
+    const [HIV, setHIV] = useState();
+    const [GDP, setGDP] = useState();
+    const [population,setPopulation] = useState();
+    const [prevalence10, setPrevalence10]= useState();
+    const [prevalence5, setPrevalence5] = useState();
+    const [incomeComposition, setIncomeComposition] = useState();
+    const [schooling,setSchooling] = useState();
 
+    const [prediction,setPrediction]=useState();
+    const [flag,setFlag]=useState(false);
 
     function handleSubmit(e){
         e.preventDefault();
         // console.log(email, password);
         const obj = [
-            `${nitrogenContent}`,
-            `${phosphorusContent}`,
-            `${pottasium}`,
-            `${temperature}`,
-            `${humidity}`,
-            `${pH}`,
-            rainfall 
+          status,adultMortality,alcohol,expenditure,hepatitisB,measles,BMI,under5Deaths,polio,totalExpenditure,diphtheria,HIV,
+          GDP,population,prevalence10,prevalence5,incomeComposition,schooling
         ]
         console.log(obj)
         let s="http://localhost:8000/api/crop-recommendation"
@@ -45,13 +51,24 @@ function CropRecommendation() {
     }
 
     function handleChange(e){
-        if (e.target.name === "NitrogenContent") setNitrogenContent(e.target.value);
-        if (e.target.name==="PhosphorusContent") setPhosphorusContent(e.target.value);
-        if (e.target.name === "Pottasium") setPottasium(e.target.value);
-        if (e.target.name==="Temperature") setTemperature(e.target.value);
-        if (e.target.name === "Humidity") setHumidity(e.target.value);
-        if (e.target.name==="pH") setPh(e.target.value);
-        if (e.target.name === "Rainfall") setRainfall(e.target.value);
+        if (e.target.name === "Status") setStatus(e.target.value);
+        if (e.target.name === "AdultMortality") setAdultMortality(e.target.value);
+        if (e.target.name === "Alcohol") setAlcohol(e.target.value);
+        if (e.target.name === "Expenditure") setExpenditure(e.target.value);
+        if (e.target.name === "HepatitisB") setHepatitisB(e.target.value);
+        if (e.target.name === "Measles") setMeasles(e.target.value);
+        if (e.target.name === "BMI") setBMI(e.target.value);
+        if (e.target.name === "Under5Deaths") setUnder5Deaths(e.target.value);
+        if (e.target.name === "Polio") setPolio(e.target.value);
+        if (e.target.name === "TotalExpenditure") setTotalExpenditure(e.target.value);
+        if (e.target.name === "Diphtheria") setDiphtheria(e.target.value);
+        if (e.target.name === "HIV") setHIV(e.target.value);
+        if (e.target.name === "GDP") setGDP(e.target.value);
+        if (e.target.name === "Population") setPopulation(e.target.value);
+        if (e.target.name === "Prevalence10") setPrevalence10(e.target.value);
+        if (e.target.name === "Prevalence5") setPrevalence5(e.target.value);
+        if (e.target.name === "IncomeComposition") setIncomeComposition(e.target.value);
+        if (e.target.name === "Schooling") setSchooling(e.target.value);
     }
 
   return (
@@ -62,10 +79,10 @@ function CropRecommendation() {
                   <img className={style.img} src={logo} alt="img" />
                   {/* <img className={style.leftimag} src={logo} alt="BigCo Inc. logo"/> */}
                   <div className={style.heading}>
-                        Crop Recommendation
+                        Life Expectancy Prediction
                   </div>
                   <div className={style.info}>
-                        Please enter correct details to get the favorable crop
+                        Please enter correct details to predict life expectancy
                   </div>
               </div>
 
@@ -86,34 +103,76 @@ function CropRecommendation() {
                   :
                 (<>
                 <table className={style.table}>
-                    <tr className={style.row}>
-                    <input className={style.forinput} type="number" name="NitrogenContent" id="NitrogenContent" placeholder="Nitrogen Content eg. 50" required="true" onChange={handleChange} />
+                    <tr >
+                    <input className={style.forinput} type="number" name="Status" id="Status" placeholder="*STATUS* - Developing : 0 & Developed : 1" required="true" onChange={handleChange} />
                     </tr>
 
                     
-                    <tr className={style.row}>
-                    <input className={style.forinput} type="number" name="PhosphorusContent" id="PhosphorusContent" placeholder="Phosphorus Content eg. 50" required="true" onChange={handleChange} />
+                    <tr >
+                    <input className={style.forinput} type="number" name="AdultMortality" id="AdultMortality" placeholder="*ADULT MORTALITY* - probability of dying between 15 and 60 years per 1000 population" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="Pottasium" id="Pottasium" placeholder="Pottasium(K) eg. 40" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="Alcohol" id="Alcohol" placeholder="*ALCOHOL* - recorded per capita (15+) consumption (in litres of pure alcohol) eg. 0.01" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="Temperature" id="Temperature" placeholder="Temperature eg. 25" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="Expenditure" id="Expenditure" placeholder="% EXPENDITURE on health as a percentage of GDP per capita" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="Humidity" id="Humidity" placeholder="Humidity Level eg. 65" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="HepatitisB" id="HepatitisB" placeholder="*HEPATITIS B* (HepB) immunization coverage among 1-year-olds (%)" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="pH" id="pH" placeholder="pH value eg. 7" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="Measles" id="Measles" placeholder="*MEASLES* - Number of reported cases per 1000 population" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="Rainfall" id="Rainfall" placeholder="Rainfall eg. 100" required="true" onChange={handleChange} />
-                    </tr> 
+                    <input className={style.forinput} type="number" name="BMI" id="BMI" placeholder="*BMI* eg. 22" required="true" onChange={handleChange} />
+                    </tr>
+                    <tr >
+                    <input className={style.forinput} type="number" name="Under5Deaths" id="Under5Deaths" placeholder="*UNDER 5 DEATHS* -Number of under-five deaths per 1000 population" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="Polio" id="Polio" placeholder="*POLIO* - (Pol3) immunization coverage among 1-year-olds (%)" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="TotalExpenditure" id="TotalExpenditure" placeholder="*TOTAL EXPENDITURE* - General government expenditure on health as a percentage of total government expenditure (%)" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="Diphtheria" id="Diphtheria" placeholder="*DIPHTHERIA* - immunization coverage among 1-year-olds (%)" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="HIV" id="HIV" placeholder="*HIV/AIDS* - Deaths per 1 000 live births HIV/AIDS (0-4 years)" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="GDP" id="GDP" placeholder="*GDP* in USD eg. 8000" required="true" onChange={handleChange} />
+                    </tr>
+                    <tr >
+                    <input className={style.forinput} type="number" name="Population" id="Population" placeholder="*POPULATION* - Population of your country " required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="Prevalence10" id="Prevalence10" placeholder="*Prevalence of thinness among children and adolescents* for Age 10 to 19 (% )" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="Prevalence5" id="Prevalence5" placeholder="*Prevalence of thinness among children* for Age 5 to 9(%)" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="IncomeComposition" id="IncomeComposition" placeholder="Human Development Index in terms of *Income composition of resources* (index ranging from 0 to 1)" required="true" onChange={handleChange} />
+                    </tr>
+
+                    <tr>
+                    <input className={style.forinput} type="number" name="Schooling" id="Schooling" placeholder="*SCHOOLING* - Number of years of Schooling(years) eg 10" required="true" onChange={handleChange} />
+                    </tr>
 
                 </table>
                 <div className={style.btn_block}>
