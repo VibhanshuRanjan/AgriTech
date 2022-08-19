@@ -1,5 +1,6 @@
 .box {
 	margin: 5em 20em 1em 20em;
+	// padding-top: 5em;
 	// background-color: rgb(255, 242, 242);
 	display: flex;
 	flex-direction: row;
@@ -12,7 +13,7 @@
 
 .fullpage {
 	background-color: rgb(252 236 255);
-	;
+	// padding-top: 5em;
 	//background-image:linear-gradient(147deg, #ebe0ec, #e7c3e2, #e7db95);
 	height: 100vh;
 }

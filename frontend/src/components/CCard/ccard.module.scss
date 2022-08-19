@@ -1,0 +1,82 @@
+.ccard{
+    width:23em;
+    margin-top: 4em;
+    margin-right:2em;
+    margin-left:2em;
+    box-shadow: 1px 2px 6px rgba(98, 98, 98, 1);
+    // background-image: linear-gradient(180deg, rgb(250, 235, 247),rgb(255, 255, 255));
+    
+
+}
+
+.cover{
+    width: 23em;
+    height: 10em;
+}
+
+.logo{
+    width: 8em;
+    height: 8em;
+    margin-top: 6em;
+    border-radius: 90%;
+    background-color: blue;
+}
+
+.college{
+    margin-top: 1em;
+    color: gray;
+}
+
+.email{
+    margin-top: 1em;
+    color: gray;
+}
+
+.name{
+    margin-top: 2em;
+    color: black;
+    font-size:larger ;
+    font-weight: bolder;
+}
+.t1{
+    height:5em;
+    margin-bottom: 2em;
+    filter:hue-rotate(230deg) saturate(1.6);
+}
+
+.card{
+    width:23em;
+    height: 16em;
+    border: none;
+    border-radius: 0;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+
+}
+
+.title{
+    margin-bottom: 1em;
+}
+
+.link{
+    margin-top: 2em;
+    text-decoration: none;
+}
+.link:hover{
+    color:rgb(101, 195, 205);
+}
+
+.anchor{
+    margin:0em 1.2em 0em 1.2em;
+    font-size: larger;
+}
+
+.cardFooter{
+    margin-top:1.3em;
+    padding-top:0.3em;
+    padding-bottom: 0.2em;
+    // border-top: 1px solid rgba(89, 89, 89, 0.445);
+    background-color: #f1dcf0;
+}

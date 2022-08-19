@@ -65,7 +65,7 @@ function CropRecommendation() {
                         Crop Recommendation
                   </div>
                   <div className={style.info}>
-                        Please enter correct details to get the favorable crop
+                        Please enter correct details to get the favourable crop
                   </div>
               </div>
 

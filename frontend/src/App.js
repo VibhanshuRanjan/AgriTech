@@ -9,6 +9,10 @@ import StrokePrediction from './pages/StrokePrediction/strokePrediction';
 import FertilizerRecommendation from './pages/FertilizerRecommendation/fertilizerRecommendation';
 import LifeExpectancy from './pages/LifeExpectancy/lifeExpectancy';
 import PlantDisease from './pages/PlantDisease/plantDisease';
+import Navbar from './components/Navbar/navbar';
+import ContactUs from './pages/ContactUs/contactUs';
+import About from './pages/About/about';
+import Footer from './components/Footer/footer'
 
 function App() {
 
@@ -31,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* <Navbar /> */}
       <Router>
         <Routes>
           <Route path="/"  element={< HomePage />} />
@@ -39,6 +44,8 @@ function App() {
           <Route path="/plant-disease"  element={< PlantDisease />} />
           <Route path="/stroke-prediction"  element={< StrokePrediction />} />
           <Route path="/life-expectancy"  element={< LifeExpectancy />} />
+          <Route path="/contact"  element={< ContactUs />} />
+          <Route path="/about"  element={< About />} />
         </Routes>
       </Router>
 

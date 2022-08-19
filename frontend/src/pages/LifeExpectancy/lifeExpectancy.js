@@ -82,7 +82,7 @@ function CropRecommendation() {
                         Life Expectancy Prediction
                   </div>
                   <div className={style.info}>
-                        Please enter correct details to predict life expectancy
+                        Please enter correct details to predict your life expectancy
                   </div>
               </div>
 
@@ -110,7 +110,7 @@ function CropRecommendation() {
 
                     
                     <tr >
-                    <input className={style.forinput} type="number" name="AdultMortality" id="AdultMortality" placeholder="*ADULT MORTALITY* - probability of dying between 15 and 60 years per 1000 population" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="AdultMortality" id="AdultMortality" placeholder="*ADULT MORTALITY* - probability of dying between 15-60 years/1000 population" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
@@ -141,7 +141,7 @@ function CropRecommendation() {
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="TotalExpenditure" id="TotalExpenditure" placeholder="*TOTAL EXPENDITURE* - General government expenditure on health as a percentage of total government expenditure (%)" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="TotalExpenditure" id="TotalExpenditure" placeholder="*TOTAL EXPENDITURE* - Govt expenses on health as a % of total govt expenses " required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
@@ -149,7 +149,7 @@ function CropRecommendation() {
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="HIV" id="HIV" placeholder="*HIV/AIDS* - Deaths per 1 000 live births HIV/AIDS (0-4 years)" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="HIV" id="HIV" placeholder="*HIV/AIDS* - Deaths per 1000 live births HIV/AIDS (0-4 years)" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
@@ -160,15 +160,15 @@ function CropRecommendation() {
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="Prevalence10" id="Prevalence10" placeholder="*Prevalence of thinness among children and adolescents* for Age 10 to 19 (% )" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="Prevalence10" id="Prevalence10" placeholder="*Prevalence of thinness among children* for Age 10-19 (%)" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="Prevalence5" id="Prevalence5" placeholder="*Prevalence of thinness among children* for Age 5 to 9(%)" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="Prevalence5" id="Prevalence5" placeholder="*Prevalence of thinness among children* for Age 5-9 (%)" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>
-                    <input className={style.forinput} type="number" name="IncomeComposition" id="IncomeComposition" placeholder="Human Development Index in terms of *Income composition of resources* (index ranging from 0 to 1)" required="true" onChange={handleChange} />
+                    <input className={style.forinput} type="number" name="IncomeComposition" id="IncomeComposition" placeholder="HDI in terms of *Income composition of resources* (index 0 to 1)" required="true" onChange={handleChange} />
                     </tr>
 
                     <tr>

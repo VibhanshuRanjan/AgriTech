@@ -1,18 +1,22 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavBar from 'react-bootstrap/Navbar';
+import style from './navbar.module.scss';
+import logo from '../../utils/image/logo.svg'
 
 function Navbar() {
   return (
     <>
-      <NavBar bg="dark" variant="dark">
-        <Container>
-          <NavBar.Brand href="/">Kisaan</NavBar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/features">Features</Nav.Link>
-            <Nav.Link href="/pricing">Pricing</Nav.Link>
+      <NavBar className={style.navbar}  variant="dark">
+          {/* <NavBar.Brand className={style.left} href="/">K M</NavBar.Brand> */}
+          <a href='/'>
+            <img className={style.logo} src={logo}  alt="Image" />
+          </a>
+          <Nav className={style.mid}>
+            <Nav.Link className={style.mid_opt} href="/" >Home</Nav.Link>
+            <Nav.Link className={style.mid_opt} href="/about">About</Nav.Link>
+            <Nav.Link className={style.mid_opt} href="/contact">Contact Us</Nav.Link>
           </Nav>
-        </Container>
       </NavBar>
     </>
   );

@@ -65,7 +65,7 @@ function StrokePrediction() {
                         Fertilizer Recommendation
                   </div>
                   <div className={style.info}>
-                        Please enter correct details
+                        Please enter  details to know favourable fertilizer for your soil
                   </div>
               </div>
 
@@ -75,7 +75,7 @@ function StrokePrediction() {
                   
                 <div className={style.result}>
                   <div className={style.result_heading}>
-                    Recommended Crop:
+                    Recommended Fertilizer:
                   </div>
                   {prediction}
                 </div>
