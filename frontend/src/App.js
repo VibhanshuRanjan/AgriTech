@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage/homePage';
 import { useEffect } from "react";
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import axios from 'axios'
-import { BASE_API_URL } from './utils/constansts';
+import { BASE_API_URL } from './utils/constants';
 import CropRecommendation from './pages/CropRecommendation/cropRecommendation';
 import StrokePrediction from './pages/StrokePrediction/strokePrediction';
 import FertilizerRecommendation from './pages/FertilizerRecommendation/fertilizerRecommendation';

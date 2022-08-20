@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from 'axios';
 import logo from '../../utils/image/life.svg'
 import Navbar from "../../components/Navbar/navbar.js"
-import { BASE_API_URL } from '../../utils/constansts';
+import { BASE_API_URL } from '../../utils/constants';
 
 function CropRecommendation() {
 
@@ -37,7 +37,7 @@ function CropRecommendation() {
           GDP,population,prevalence10,prevalence5,incomeComposition,schooling
         ]
         console.log(obj)
-        let s="http://localhost:8000/api/life-expectancy-prediction"
+        let s=`${BASE_API_URL}/api/life-expectancy-prediction`
         axios.post(s, obj)
           
           .then(res => {

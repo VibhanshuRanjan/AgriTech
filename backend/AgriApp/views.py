@@ -18,10 +18,10 @@ from .serializers import *
 import pickle
 
 cwd = os.path.dirname(os.path.realpath(__file__))
-model2 = pickle.load(open(cwd+"\FertilizerRecommendationModel.pkl", 'rb'))
-model1 = pickle.load(open(cwd+'\CropRecommendationModel.pkl', 'rb'))
-model4= pickle.load(open(cwd+'\StrokePredictionModel.pkl', 'rb'))
-model5=pickle.load(open(cwd+'\LifeExpectancyPredictionModel.pkl','rb'))
+model2 = pickle.load(open(cwd+"/FertilizerRecommendationModel.pkl", 'rb'))
+model1 = pickle.load(open(cwd+'/CropRecommendationModel.pkl', 'rb'))
+model4= pickle.load(open(cwd+'/StrokePredictionModel.pkl', 'rb'))
+model5=pickle.load(open(cwd+'/LifeExpectancyPredictionModel.pkl','rb'))
 
 
 

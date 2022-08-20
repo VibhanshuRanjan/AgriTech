@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from 'axios';
 import logo from '../../utils/image/stroke.svg'
 import Navbar from "../../components/Navbar/navbar.js"
-import { BASE_API_URL } from '../../utils/constansts';
+import { BASE_API_URL } from '../../utils/constants';
 
 function StrokePrediction() {
 
@@ -37,7 +37,7 @@ function StrokePrediction() {
             `${smokingStatus}`,
         ]
         console.log(obj)
-        let s="http://localhost:8000/api/stroke-prediction"
+        let s=`${BASE_API_URL}/api/stroke-prediction`
         axios.post(s, obj)
           
           .then(res => {

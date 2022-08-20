@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from 'axios';
 import logo from '../../utils/image/crimg.svg'
 import Navbar from "../../components/Navbar/navbar.js"
-import { BASE_API_URL } from '../../utils/constansts';
+import { BASE_API_URL } from '../../utils/constants';
 
 function CropRecommendation() {
 
@@ -31,7 +31,7 @@ function CropRecommendation() {
             rainfall 
         ]
         console.log(obj)
-        let s="http://localhost:8000/api/crop-recommendation"
+        let s=`${BASE_API_URL}/api/crop-recommendation`
         axios.post(s, obj)
           
           .then(res => {

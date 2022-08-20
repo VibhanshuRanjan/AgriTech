@@ -9,6 +9,7 @@ import cover1 from '../../utils/image/pradhancover.jpg';
 import logo5 from '../../utils/image/life.svg';
 
 
+
 import { useEffect } from 'react'
 function ContactUs() {
 
