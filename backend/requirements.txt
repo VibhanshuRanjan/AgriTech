@@ -6,7 +6,7 @@ joblib==1.1.0
 numpy==1.21.5
 pytz==2022.1
 scikit-learn==1.0.1
-scipy==1.9.0
+scipy==1.7.2
 sklearn==0.0
 sqlparse==0.4.2
 threadpoolctl==3.1.0
