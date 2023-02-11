@@ -5,7 +5,7 @@ djangorestframework==3.13.1
 joblib==1.1.0
 numpy==1.21.5
 pytz==2022.1
-scikit-learn==1.1.2
+scikit-learn==1.0.1
 scipy==1.9.0
 sklearn==0.0
 sqlparse==0.4.2
