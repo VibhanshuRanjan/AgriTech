@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-&e%9+e3(l6u3c#nwj0&euj-i=yj7&p0qnw%hse_vrg4gllr*sz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -88,17 +88,19 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # }
 
 DATABASES = {
+
     'default': {
+
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD':'uChVQyiBOeZOTSlLql1f',
-        'HOST':'containers-us-west-196.railway.app',
-        'PORT':'6625',
+        'PASSWORD': 'uChVQyiBOeZOTSlLql1f',
+        'HOST': 'containers-us-west-196.railway.app',
+        'PORT': '6625',
 
     }
-}
 
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -134,12 +136,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles_build','static')
+STATIC_URL = '/static/'
+# STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-# MEDIA_URL= "img/"
-# MEDIA_ROOT=BASE_DIR/'../media'
+# MEDIA_URL= '/media/'
+# MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
