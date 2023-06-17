@@ -35,9 +35,10 @@ def crop_recommendation(request):
         print(int_features)
         final_features = [np.array(int_features)]
         prediction = model1.predict( final_features )
+        print(prediction)
         output = prediction[0].capitalize()
         print(output)
-        print(cwd)
+        # print(cwd)
         return Response(output)
 
 
@@ -92,12 +93,12 @@ def fertilizer_recommendation(request):
         print(temp_array)
         print(request.data)
 
-        
+        print("ououpt kjkjkjhkjhkj ")
         final_features = np.array([temp_array])
         prediction = model2.predict( final_features )
         output = prediction[0].capitalize()
         # print(output)
-        # print(cwd)
+        print("wd")
         return Response(output)
 
 
