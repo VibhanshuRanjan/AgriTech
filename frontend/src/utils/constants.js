@@ -1,2 +1,4 @@
-export const BASE_API_URL= "https://krishimitra-backend.onrender.com";
-// export const BASE_API_URL= ""
+
+// const BASE_API_URL= "https://vblog-backend.onrender.com";
+const BASE_API_URL= "http://localhost:8000"
+
