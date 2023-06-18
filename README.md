@@ -6,6 +6,10 @@ A web application for agriculture and health sectors with the services of Crop/F
 ### Try this website - https://agritech-frontend.vercel.app/
 
 ## Requirements
+* Install Node.js. [Download Link](https://nodejs.org/en/download)
+* Install Python 3. [Download Link](https://www.python.org/downloads/)
+* POSTMAN - helpful in testing APIs. [Download Link](https://www.postman.com/downloads/)
+
 
 
 ## Getting Started
