@@ -49,69 +49,68 @@ Directory named "env" will be created. Now all the packages/library required for
     pip install -r requirements.txt
     ```
 * Changes in **`backend>myproject>settings.py`** file-
-      1.  Comment out or remove line
-          ```
-          from decouple import config
-          ```
+    1.  Comment out or remove line
+        ```
+        from decouple import config
+        ```
 
-      2.  Change
-          ```
-          SECRET_KEY = config('SECRET_KEY')
-          ```
-          to
-          ```
-          SECRET_KEY = "md"
-          ```
+    2.  Change
+        ```
+        SECRET_KEY = config('SECRET_KEY')
+        ```
+        to
+        ```
+        SECRET_KEY = "md"
+        ```
 
-      3. 
-          ```
-          DEBUG = config('DEBUG',cast = bool)
-          ```
-          to
+    3.  Change
+        ```
+        DEBUG = config('DEBUG',cast = bool)
+        ```
+        to
 
-          ```
-          DEBUG = True
-          ```
+        ```
+        DEBUG = True
+        ```
 
-      4. 
-          Comment out or remove line
-          ```
-          WSGI_APPLICATION = 'myproject.wsgi.application'
-          ```
-      5. 
-          ```
-          DATABASES = {
+    4. Comment out or remove line
+        ```
+        WSGI_APPLICATION = 'myproject.wsgi.application'
+        ```
+    5.  Change
+        ```
+        DATABASES = {
 
-              'default': {
+            'default': {
 
-                  'ENGINE': 'django.db.backends.postgresql',
-                  'NAME': 'Agritech',
-                  'USER': 'postgres',
-                  'PASSWORD': config('PASSWORD'),
-                  'HOST': 'localhost',
-                  'PORT': config('PORT'),
+                'ENGINE': 'django.db.backends.postgresql',
+                'NAME': 'Agritech',
+                'USER': 'postgres',
+                'PASSWORD': config('PASSWORD'),
+                'HOST': 'localhost',
+                'PORT': config('PORT'),
 
-              }
+            }
 
-          }
-          ```
-          to 
+        }
+        ```
+        to 
 
-          ```
-          DATABASES = {
-              'default': {
-                  'ENGINE': 'django.db.backends.sqlite3',
-                  'NAME': BASE_DIR / 'db.sqlite3',
-              }
-          }
-          ```
+        ```
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
+        }
+        ```
 * Enter into backend folder - **`cd backend`**
 * Then execute the following command to finally run the server-
     ```
     python manage.py runserver
     ```
 * Note---
-You may still be asked to install django, djangorestframework, django-cors-headers, whitenoise etc. Whatever module is asked to install just use command- pip install <packagename>. And make sure virtual environment is activated when installing modules for backend.
+You may still be asked to install django, djangorestframework, django-cors-headers, whitenoise etc. Whatever module is asked to install just use command- pip install packagename. And make sure virtual environment is activated when installing modules for backend.
 
 * In **`frontend>src>utils>constants.js`** file change-
     ```
