@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,10 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&e%9+e3(l6u3c#nwj0&euj-i=yj7&p0qnw%hse_vrg4gllr*sz'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG',cast = bool)
 
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
@@ -92,11 +93,11 @@ DATABASES = {
     'default': {
 
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'NAME': 'Agritech',
         'USER': 'postgres',
-        'PASSWORD': 'uChVQyiBOeZOTSlLql1f',
-        'HOST': 'containers-us-west-196.railway.app',
-        'PORT': '6625',
+        'PASSWORD': config('PASSWORD'),
+        'HOST': 'localhost',
+        'PORT': config('PORT'),
 
     }
 
