@@ -133,3 +133,8 @@ You may still be asked to install django, djangorestframework, django-cors-heade
     ```
     CORS_ORIGIN_ALLOW_ALL = True
     ```
+## Contributing
+
+Contributions are always welcome!
+
+Feel free to submit pull requests. If you're planning significant changes, please start by opening an issue to initiate a discussion about your proposed modifications.
