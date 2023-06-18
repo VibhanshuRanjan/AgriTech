@@ -49,14 +49,12 @@ Directory named "env" will be created. Now all the packages/library required for
     pip install -r requirements.txt
     ```
 * Changes in **`backend>myproject>settings.py`** file-
-      1. 
-          Comment out or remove line
+      1.  Comment out or remove line
           ```
           from decouple import config
           ```
 
-      2. 
-          Change
+      2.  Change
           ```
           SECRET_KEY = config('SECRET_KEY')
           ```
