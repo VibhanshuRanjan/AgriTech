@@ -156,5 +156,5 @@ STATICFILES_DIRS = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 # CORS_ALLOWED_ORIGINS = [
-#     "https://vblog-blogger.onrender.com"
+#     "https://agritech-backend.vercel.app"
 # ]
